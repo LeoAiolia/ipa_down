@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>寓小二</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .tip-img {
+            display: block;
+            /* width: 74%; */
+            margin: 90px auto 16px;
+            width: 80px;
+            height: 80px;
+        }
+
+        .tip-title {
+            width: 94%;
+            margin: 10px auto 40px;
+            font-size: 18px;
+            color: #333;
+            text-align: center;
+        }
+
+        .tip-text {
+            width: 94%;
+            margin: 0 auto;
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+        }
+
+        .tip-ignore {
+            margin: 20px auto;
+            font-size: 12px;
+            color: #999;
+            text-align: center;
+        }
+
+        .tip-btn {
+            display: block;
+            width: 90%;
+            font-size: 14px;
+            color: #fff;
+            background: #1890FF;
+            border: none;
+            border-radius: 5px;
+            margin: 80px auto 20px;
+            padding: 10px 0;
+        }
+
+        .tip-btn2 {
+            display: block;
+            align-content: center;
+            width: 90%;
+            font-size: 12px;
+            color: #1890FF;
+            background: none;
+            border: none;
+            border-radius: none;
+            margin: 0px auto 20px;
+        }
+
+        .tip-note {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .tip-note>a {
+            color: #1890FF;
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <img class="tip-img" src="https://static.yuxiaor.com/yxr_logo.png" alt="">
+    <div class="tip-title">寓小二</div>
+    <button id="tip-btn" class="tip-btn">下载APP</button>
+    <div id="tip-btn2" class="tip-note">本服务由寓小二提供技术支持</div>
+    <a
+        href="itms-services://?action=download-manifest&url=https://github.com/LeoAiolia/ipa_down/blob/main/manifest.plist">下载
+    </a>
+
+    <script>
+        document.getElementById('tip-btn').onclick = function () {
+            var toUrl = 'itms-services://?action=download-manifest&url=https://github.com/LeoAiolia/ipa_down/blob/main/manifest.plist';
+            location.href = decodeURIComponent(toUrl)
+        }
+    </script>
+</body>
+
+</html>
